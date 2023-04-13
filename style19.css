@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://onwardigo.files.wordpress.com/2016/05/millionaire01.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.help {
+  width: 200px;
+  height: 427px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.money {
+  width: 200px;
+  height: 427px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.half {
+  width: 70px;
+  height: 70px;
+  border-radius: 25px;
+  background-image: url(data:image/png;base64,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);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.call {
+  width: 70px;
+  height: 70px;
+  border-radius: 25px;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/000/420/369/original/vector-telephone-road-sign-icon.jpg);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.hall {
+  width: 70px;
+  height: 70px;
+  border-radius: 25px;
+  background-image: url(https://t3.ftcdn.net/jpg/04/11/54/06/360_F_411540625_eRLRq7pRfCrZLAtOTlCvWW9xJ8oSe7R9.jpg);
+  background-size: cover;
+  cursor: pointer;
+}
+.hallDivs {
+  width: 100px;
+  height:170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.a{
+  width: 120px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: blue;
+  opacity: 0;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.moneys {
+  height: 30px;
+  background-color: rgb(3, 3, 119);
+  color: aliceblue;
+  margin-top: 5px;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.money1 {
+  width: 135px;
+  font-size: 21px;
+  opacity: 0.8;
+}
+
+.money2 {
+  width: 125px;
+  font-size: 20px;
+}
+
+.money3 {
+  width: 115px;
+  font-size: 19px;
+}
+
+.money4 {
+  width: 105px;
+  font-size: 18px;
+}
+
+.money5 {
+  width: 95px;
+  font-size: 17px;
+}
+
+.money6 {
+  width: 85px;
+  font-size: 15px;
+}
+
+.money7 {
+  width: 75px;
+  font-size: 14px;
+}
+
+.money8 {
+  width: 65px;
+  font-size: 14px;
+}
+
+.money9 {
+  width: 55px;
+  font-size: 14px;
+}
+
+.money10 {
+  width: 45px;
+  font-size: 13px;
+}
+.game {
+  width: 560px;
+  height: 427px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.question {
+  width: 550px;
+  height: 150px;
+  background-color: rgb(3, 3, 119);
+  border-radius: 25px;
+  opacity: 0.8;
+  color: aliceblue;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+}
+
+.answers {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 550px;
+  height: 150px;
+}
+
+.answer {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.win {
+  width: 230px;
+  height: 60px;
+  background-color: rgb(3, 3, 119);
+  border-radius: 20px;
+  opacity: 0.8;
+  color: aliceblue;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+.hide{
+opacity: 0;
+}
